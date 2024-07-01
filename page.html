@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form>
+        <h2> WIFI LOGIN </h2>
+        <div class="internal">
+            <img id="qr-code" width="164" src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=https%3A%2F%2Fexample.com%2Ftodo">
+            <div class="inputs">
+                <label>Network name =
+                    <input class="ssid" placeholder="Wifi Network Name ">
+                </label>
+                <label> Password  =
+                    <input class="password" placeholder="Wifi Password">
+                </label>
+            </div>
+        </div>
+        <p> Point your phone's camera at the qr code to connect to Network</p>
+        <button type="button" id="create-qr-code"> Print QR code</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
